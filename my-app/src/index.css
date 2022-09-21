@@ -1,0 +1,39 @@
+@font-face {
+  font-weight: normal;
+  font-display: block;
+  font-family: 'icon-font';
+  src: url('../public/fonts/icon-font.eot'),
+       url('../public/fonts/icon-font.eot?#iefix') format('embedded-opentype'),
+       url('../public/fonts/icon-font.woff2') format('woff2'),
+       url('../public/fonts/icon-font.woff') format('woff'),
+       url('../public/fonts/icon-font.ttf') format('truetype'),
+       url('../public/fonts/icon-font.svg') format('svg');
+}
+
+.icon-font::before {
+  display: flex;
+  direction: ltr;
+  line-height: 1;
+  width: inherit;
+  height: inherit;
+  word-wrap: normal;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: normal;
+  white-space: nowrap;
+  text-transform: none;
+  letter-spacing: normal;
+  vertical-align: middle;
+  content: attr(data-icon);
+  font-family: 'icon-font';
+  font-feature-settings: 'liga';
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.App {
+  font-family: sans;
+  font-size: 32px;
+  color: blue;
+}
